@@ -57,7 +57,7 @@ body {
 
 #features {
     text-align: center;
-    margin: auto;
+    padding: 7% 15%;
 }
 
 .features-headers {
@@ -65,7 +65,9 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
 }
-
+.feature-box{
+    padding: 4.5%;
+}
 .features-icon {
     font-size: 3.5rem;
     color: #ef8172;
