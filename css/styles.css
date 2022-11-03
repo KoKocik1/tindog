@@ -1,7 +1,7 @@
 body {
     font-family: 'Montserrat';
-}
 
+}
 /**************** Title ******************/
 #title {
     background-color: #ff4c68;
@@ -9,7 +9,6 @@ body {
 }
 
 h1 {
-    /*h1-title*/
     font-family: 'Montserrat', sans-serif;
     font-size: 3.5rem;
     line-height: 1.5;
@@ -18,7 +17,7 @@ h1 {
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7% 15%;
 }
 
 
@@ -52,6 +51,18 @@ h1 {
 .phoneImage {
     transform: rotate(25deg);
     width: 60%;
+    position: absolute;
+    right: 30%;
+}
+
+@media (max-width: 1028px) {
+    #title{
+        text-align: center;
+    }
+    .phoneImage {
+        position: static;
+        transform: rotate(0);
+    }
 }
 
 /**************** Features ******************/
@@ -59,10 +70,11 @@ h1 {
 #features {
     text-align: center;
     padding: 7% 15%;
+    background-color: #fff;
+    position: relative;
 }
 
 h3 {
-    /*features-headers*/
     font-family: 'Montserrat';
     font-size: 1.5rem;
     font-weight: bold;
@@ -89,7 +101,7 @@ h3 {
 /**************** Testimonials *****************/
 
 #testimonials {
- 
+
     text-align: center;
     background-color: #ef8172;
     color: #fff;
@@ -102,24 +114,36 @@ h2 {
     line-height: 1.5;
 }
 
-.testimonials-image{
+.testimonials-image {
     width: 10%;
     border-radius: 100%;
     margin: 20px;
 }
-.carousel-item{
+
+.carousel-item {
     padding: 7% 15%;
 }
 
 /**************** Press *****************/
-#press{
+#press {
     background-color: #ef8172;
     text-align: center;
     padding-bottom: 3%;
 
 }
 
-.press-image{
+.press-image {
     width: 15%;
     margin: 20px 20px 50px;
+}
+
+/**************** Pricing *****************/
+
+#pricing {
+    padding: 100px;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+    text-align: center;
 }
