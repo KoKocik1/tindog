@@ -1,27 +1,60 @@
 body {
     font-family: 'Montserrat';
-
-}
-/**************** Title ******************/
-#title {
-    background-color: #ff4c68;
-
+    text-align: center;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+/**************** Headings ***************/
+.big-heading {
     font-size: 3.5rem;
     line-height: 1.5;
-    font-weight: 900;
     color: white;
 }
 
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/*************** Containers **************/
 .container-fluid {
-    padding: 3% 15% 7% 15%;
+    padding: 7% 15%;
 }
 
 
-/* Navigation Bar */
+/*************** Containers **************/
+.color-section {
+    background-color: #ff4c68;
+    color: white;
+}
+
+.white-section {
+    background-color: #fff;
+    color: black;
+}
+
+/**************** Title ******************/
+
+
+#title .container-fluid {
+    text-align: left;
+    padding: 3% 15% 7%;
+}
+
+/**************** Navigation Bar ******************/
 .navbar {
     padding-bottom: 4.5rem;
 }
@@ -41,13 +74,15 @@ h1 {
     font-size: 1.2rem;
 }
 
-/* Download buttons */
+/**************** Download buttons ******************/
 
 .download-button {
     margin: 5% 3% 5% 0;
 }
 
-/* Title Image */
+
+/**************** Title Image ******************/
+
 .phoneImage {
     transform: rotate(25deg);
     width: 60%;
@@ -56,9 +91,10 @@ h1 {
 }
 
 @media (max-width: 1028px) {
-    #title{
+    #title {
         text-align: center;
     }
+
     .phoneImage {
         position: static;
         transform: rotate(0);
@@ -68,16 +104,12 @@ h1 {
 /**************** Features ******************/
 
 #features {
-    text-align: center;
-    padding: 7% 15%;
     background-color: #fff;
     position: relative;
 }
 
-h3 {
-    font-family: 'Montserrat';
+.features-title {
     font-size: 1.5rem;
-    font-weight: bold;
 }
 
 .feature-box {
@@ -101,18 +133,10 @@ h3 {
 /**************** Testimonials *****************/
 
 #testimonials {
-
-    text-align: center;
     background-color: #ef8172;
-    color: #fff;
 }
 
-h2 {
-    font-family: 'Montserrat';
-    font-weight: bold;
-    font-size: 3rem;
-    line-height: 1.5;
-}
+
 
 .testimonials-image {
     width: 10%;
@@ -120,21 +144,25 @@ h2 {
     margin: 20px;
 }
 
-.carousel-item {
-    padding: 7% 15%;
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 /**************** Press *****************/
 #press {
     background-color: #ef8172;
-    text-align: center;
     padding-bottom: 3%;
-
 }
 
 .press-image {
     width: 15%;
     margin: 20px 20px 50px;
+}
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 /**************** Pricing *****************/
@@ -145,5 +173,14 @@ h2 {
 
 .pricing-column {
     padding: 3% 2%;
-    text-align: center;
+}
+
+/**************** cta *****************/
+
+#cta {
+    padding-top: 100px;
+}
+
+.icons-footer {
+    margin: 20px 10px;
 }
