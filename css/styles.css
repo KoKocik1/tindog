@@ -35,7 +35,7 @@ p {
 }
 
 
-/*************** Containers **************/
+/*************** Sections **************/
 .color-section {
     background-color: #ff4c68;
     color: white;
@@ -88,17 +88,6 @@ p {
     width: 60%;
     position: absolute;
     right: 30%;
-}
-
-@media (max-width: 1028px) {
-    #title {
-        text-align: center;
-    }
-
-    .phoneImage {
-        position: static;
-        transform: rotate(0);
-    }
 }
 
 /**************** Features ******************/
@@ -183,4 +172,15 @@ p {
 
 .icons-footer {
     margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+
+    .phoneImage {
+        position: static;
+        transform: rotate(0);
+    }
 }
